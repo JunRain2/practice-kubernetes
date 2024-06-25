@@ -3,3 +3,7 @@ kind: Deployment
 metadata: 
   name: apa000dep
 spec:
+  selector:
+    matchLabels:
+      app: apa000kube
+  replicas: 3
